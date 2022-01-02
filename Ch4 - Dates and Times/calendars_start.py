@@ -5,12 +5,17 @@
 
 
 # TODO: import the calendar module
-
+import calendar
 
 # TODO: create a plain text calendar
-
+c = calendar.TextCalendar(calendar.MONDAY)
+str = c.formatmonth(2022, 1, 0, 0)
+print(str)
 
 # TODO: create an HTML formatted calendar
+hc = calendar.HTMLCalendar(calendar.SUNDAY)
+str = hc.formatmonth(2022, 1)
+print(str)
 
 
 # TODO: loop over the days of a month

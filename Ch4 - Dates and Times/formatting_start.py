@@ -12,12 +12,13 @@ def main():
 
     
     #### Date Formatting ####
-    
-    # %y/%Y - Year, %a/%A - weekday, %b/%B - month, %d - day of month
+    now = datetime.now()
 
+    # %y/%Y - Year, %a/%A - weekday, %b/%B - month, %d - day of month
+    print(now.strftime("%a %B %d %Y"))
 
     # %c - locale's date and time, %x - locale's date, %X - locale's time
-
+    print(now.strftime("%c which is %x and %X"))
 
     #### Time Formatting ####
     
